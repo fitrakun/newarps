@@ -17,6 +17,14 @@ $(document).ready(function() {
         width: '100%'
     });
 
+    //Choose date range in admin function
+    $("#admin-month-picker").datetimepicker({
+        viewMode: 'months',
+        format: 'MMMM YYYY',
+        locale: 'en',
+        date: moment()
+    })
+
     //Choose date range datepicker function
     $("#date-range-datepicker").datetimepicker({
         format: 'YYYY.MM.DD',

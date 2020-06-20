@@ -134,3 +134,10 @@ span.glyphicon.glyphicon-chevron-left::before {
     content: '\f054';
     font-family: fontAwesome;
 }
+
+.admin-month i {
+    position: absolute;
+    right: .5em;
+    height: 100%;
+    top: calc(100% - 50% - 10px);
+}

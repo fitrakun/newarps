@@ -1,26 +1,32 @@
-.btn-gray{
+.btn-gray {
     color: white;
     background-color: darkgray;
 }
 
-.custom-datalist{
+.btn-primary {
+    background: #007BFF;
+    border: none;
+}
+
+.custom-datalist {
     display: none;
 }
 
-.bootstrap-datetimepicker-widget tr:hover, .bootstrap-datetimepicker-widget td:hover {
+.bootstrap-datetimepicker-widget tr:hover,
+.bootstrap-datetimepicker-widget td:hover {
     background-color: lightblue !important;
 }
 
-.input-percentage{
+.input-percentage {
     border: 1px solid #cccccc;
     display: inline-block;
     padding: 6px 12px;
     width: 100%;
 }
 
-.input-percentage > input {
+.input-percentage>input {
     border: 0;
-    outline:none;
+    outline: none;
     width: calc(100% - 13px) !important;
     /* Firefox */
     width: -moz-calc(100% - 13px) !important;
@@ -36,18 +42,85 @@
     content: '%';
 }
 
-.select2-container--default .select2-selection--single{
+.select2-container--default .select2-selection--single {
     height: auto !important;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__rendered{
+.select2-container--default .select2-selection--single .select2-selection__rendered {
     padding: 6px 12px;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__arrow{
+.select2-container--default .select2-selection--single .select2-selection__arrow {
     top: 7px;
 }
 
-.modal-body .col-md-12{
+.modal-body .col-md-12 {
     padding-bottom: 10px;
+}
+
+.blog-title i {
+    font-size: medium;
+}
+
+.text-purple {
+    color: #7E57C2;
+}
+
+.text-brown {
+    color: #8D6E63;
+}
+
+.text-red {
+    color: #F44336;
+}
+
+.text-orange {
+    color: #FF9800;
+}
+
+.text-primary {
+    color: #007BFF;
+}
+
+.bg-green {
+    background: #66BB6A;
+}
+
+.bg-yellow {
+    background: #FFEE58;
+}
+
+.bg-gray {
+    background: #CCCCCC;
+}
+
+.bg-darkgray {
+    background: #707070;
+}
+
+.flex-10 {
+    flex: 0 0 10%;
+}
+
+.flex-12 {
+    flex: 0 0 12.5%;
+}
+
+.seen-by-photo {
+    width: 3em;
+    height: 3em;
+    object-fit: cover;
+}
+
+.comment-photo {
+    width: 4em;
+    height: 4em;
+    object-fit: cover;
+}
+
+.like-count {
+    font-size: small;
+    z-index: 1000;
+    margin-top: -1em;
+    cursor: pointer;
 }

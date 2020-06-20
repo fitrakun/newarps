@@ -124,3 +124,13 @@
     margin-top: -1em;
     cursor: pointer;
 }
+
+span.glyphicon.glyphicon-chevron-left::before {
+    content: '\f053';
+    font-family: fontAwesome;
+}
+
+.bootstrap-datetimepicker-widget table th.next::before {
+    content: '\f054';
+    font-family: fontAwesome;
+}

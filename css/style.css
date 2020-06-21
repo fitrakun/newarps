@@ -78,6 +78,10 @@
     color: #FF9800;
 }
 
+.text-yellow {
+    color: #ffe234;
+}
+
 .text-primary {
     color: #007BFF;
 }
@@ -140,4 +144,10 @@ span.glyphicon.glyphicon-chevron-left::before {
     right: .5em;
     height: 100%;
     top: calc(100% - 50% - 10px);
+}
+
+.home-reflection-section i {
+    font-family: fontAwesome;
+    font-style: normal;
+    font-size: x-large;
 }

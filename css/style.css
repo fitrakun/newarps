@@ -179,6 +179,23 @@ span.glyphicon.glyphicon-chevron-left::before {
     font-weight: 500;
 }
 
+.nav-left-blog>.d-flex>.nav-link.active,
+.nav-left-blog>.nav-link.active {
+    color: #007BFF;
+    font-weight: 800;
+    background: none;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+}
+
+.nav-left-blog .collapse .nav-link {
+    color: black;
+    margin-top: 0.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
 .left-nav-bar-blog {
     overflow: scroll;
 }

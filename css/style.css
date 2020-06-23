@@ -86,6 +86,10 @@
     color: #007BFF;
 }
 
+.bg-blue {
+    background: #007BFF;
+}
+
 .bg-green {
     background: #66BB6A;
 }
@@ -149,5 +153,40 @@ span.glyphicon.glyphicon-chevron-left::before {
 .home-reflection-section i {
     font-family: fontAwesome;
     font-style: normal;
+    font-size: x-large;
+}
+
+.left-nav-photo {
+    width: 6em;
+    height: 6em;
+}
+
+.left-photo-containter {
+    position: relative;
+}
+
+.left-photo-containter small {
+    position: absolute;
+    bottom: -1em;
+}
+
+.nav-left-blog>.d-flex>.nav-link,
+.nav-left-blog>.nav-link {
+    color: black;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.left-nav-bar-blog {
+    overflow: scroll;
+}
+
+.phone-row i {
+    font-size: large;
+}
+
+.social-media-row i {
     font-size: x-large;
 }

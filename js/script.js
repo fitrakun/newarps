@@ -108,53 +108,59 @@ $(document).ready(function() {
     });
 
     var memberList = [
-        { name: "Xiangshi Ren" },
-        { name: "Kiyoshi Nakahara" },
-        { name: "Kaechang Park" },
-        { name: "Yukinobu Hoshino" },
-        { name: "Kazunori Ueda" },
-        { name: "Toru Kurihara" },
-        { name: "Kavous Salehzadeh Niksirat" },
-        { name: "Silpasuwanchai Chaklam" },
-        { name: "Kibum Kim" },
-        { name: "Zhenxin Wang" },
-        { name: "Sayan Sarcar" },
-        { name: "William Delamare" },
-        { name: "Hamed Aliyari" },
-        { name: "Kyoko Hatakenaka" },
-        { name: "Xinhui Jiang" },
-        { name: "Yang Li" },
-        { name: "Chen Wang" },
-        { name: "Fitra Rahmamuliani" },
-        { name: "Xiaoxuan Li" },
-        { name: "Yilin Zheng" },
-        { name: "Chunyuan Lan" },
-        { name: "Xinpeng Li" },
-        { name: "Xi Chen" },
-        { name: "Sai Jiang" },
-        { name: "Hongyun Lyu" },
-        { name: "Jian Zhang" },
-        { name: "Zhihang Guo" },
-        { name: "Yanyin Zhou" },
-        { name: "Xiaofei Zhu" },
-        { name: "Junlin Sun" },
-        { name: "Akinori Kondo" },
-        { name: "Hijiri Kaneko" },
-        { name: "Ryota Torii" },
-        { name: "Takaaki Kubo" },
-        { name: "Yusuke Tokito" },
-        { name: "Saki Hiramatsu" },
-        { name: "Jiayuan Geng" },
-        { name: "Adachi Kenshi" },
-        { name: "Miyamoto Daisuke" }
+        { id: 0, text: "Xiangshi Ren" },
+        { id: 1, text: "Kiyoshi Nakahara" },
+        { id: 2, text: "Kaechang Park" },
+        { id: 3, text: "Yukinobu Hoshino" },
+        { id: 4, text: "Kazunori Ueda" },
+        { id: 5, text: "Toru Kurihara" },
+        { id: 6, text: "Kavous Salehzadeh Niksirat" },
+        { id: 7, text: "Silpasuwanchai Chaklam" },
+        { id: 8, text: "Kibum Kim" },
+        { id: 9, text: "Zhenxin Wang" },
+        { id: 10, text: "Sayan Sarcar" },
+        { id: 11, text: "William Delamare" },
+        { id: 12, text: "Hamed Aliyari" },
+        { id: 13, text: "Kyoko Hatakenaka" },
+        { id: 14, text: "Xinhui Jiang" },
+        { id: 15, text: "Yang Li" },
+        { id: 16, text: "Chen Wang" },
+        { id: 17, text: "Fitra Rahmamuliani" },
+        { id: 18, text: "Xiaoxuan Li" },
+        { id: 19, text: "Yilin Zheng" },
+        { id: 20, text: "Chunyuan Lan" },
+        { id: 21, text: "Xinpeng Li" },
+        { id: 22, text: "Xi Chen" },
+        { id: 23, text: "Sai Jiang" },
+        { id: 24, text: "Hongyun Lyu" },
+        { id: 25, text: "Jian Zhang" },
+        { id: 26, text: "Zhihang Guo" },
+        { id: 27, text: "Yanyin Zhou" },
+        { id: 28, text: "Xiaofei Zhu" },
+        { id: 29, text: "Junlin Sun" },
+        { id: 30, text: "Akinori Kondo" },
+        { id: 31, text: "Hijiri Kaneko" },
+        { id: 32, text: "Ryota Torii" },
+        { id: 33, text: "Takaaki Kubo" },
+        { id: 34, text: "Yusuke Tokito" },
+        { id: 35, text: "Saki Hiramatsu" },
+        { id: 36, text: "Jiayuan Geng" },
+        { id: 37, text: "Adachi Kenshi" },
+        { id: 38, text: "Miyamoto Daisuke" }
     ];
+
+    $("#select-project-member").select2({
+        placeholder: "Enter member's name...",
+        data: memberList,
+        width: '100%'
+    });
 
     $('.input-comment').suggest('@', {
         data: memberList,
         map: function(user) {
             return {
-                value: user.name,
-                text: '<strong>' + user.name + '</strong>'
+                value: user.text,
+                text: '<strong>' + user.text + '</strong>'
             }
         }
     });

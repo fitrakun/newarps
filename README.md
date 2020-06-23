@@ -3,6 +3,7 @@
 This is a repository for upgrading the lab reporting system based on the planning and reporting study. 
 
 #### fitrakun's work
+- [ ] Create a Product Requirements Document 
 - [x] Reflection Projects
 - [x] Notification
 - [x] Add project popover

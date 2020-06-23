@@ -192,4 +192,13 @@ $(document).ready(function() {
         $(".reply-comment-input").val('');
         $(".reply-comment-input").focus();
     });
+
+    $(".notification-icon").popover({
+        boundary: 'window',
+        html: true,
+        content: function() {
+            return $(".notification-container").html();
+        },
+        'placement': 'bottom',
+    })
 });

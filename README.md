@@ -3,8 +3,8 @@
 This is a repository for upgrading the lab reporting system based on the planning and reporting study. 
 
 #### fitrakun's work
-- [ ] Notification
 - [ ] Reflection Projects
+- [x] Notification
 - [x] Add project popover
 - [x] Projects collapse down
 - [x] Mention

@@ -207,3 +207,25 @@ span.glyphicon.glyphicon-chevron-left::before {
 .social-media-row i {
     font-size: x-large;
 }
+
+header .text-lg-center {
+    font-size: large;
+}
+
+.popover-body img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.popover-body .unread {
+    font-size: xx-large;
+}
+
+.popover-body {
+    overflow: auto;
+    max-height: 500px;
+}
+
+.notification-icon {
+    cursor: pointer;
+}

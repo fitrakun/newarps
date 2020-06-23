@@ -159,6 +159,7 @@ span.glyphicon.glyphicon-chevron-left::before {
 .left-nav-photo {
     width: 6em;
     height: 6em;
+    object-fit: cover;
 }
 
 .left-photo-containter {
@@ -180,7 +181,8 @@ span.glyphicon.glyphicon-chevron-left::before {
 }
 
 .nav-left-blog>.d-flex>.nav-link.active,
-.nav-left-blog>.nav-link.active {
+.nav-left-blog>.nav-link.active,
+.nav-left-blog .collapse .nav-link.active {
     color: #007BFF;
     font-weight: 800;
     background: none;
@@ -215,6 +217,7 @@ header .text-lg-center {
 .popover-body img {
     height: 2rem;
     width: 2rem;
+    object-fit: cover;
 }
 
 .popover-body .unread {
@@ -228,4 +231,21 @@ header .text-lg-center {
 
 .notification-icon {
     cursor: pointer;
+}
+
+.member-project-list img {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+}
+
+.project-card-list .card {
+    max-height: 500px;
+    overflow: auto;
+}
+
+.project-card-list img {
+    width: 1.75rem;
+    height: 1.75rem;
+    object-fit: cover;
 }

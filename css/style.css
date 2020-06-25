@@ -249,3 +249,7 @@ header .text-lg-center {
     height: 1.75rem;
     object-fit: cover;
 }
+
+.highlight {
+    background-color: #FFEE58;
+}

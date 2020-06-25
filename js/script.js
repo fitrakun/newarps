@@ -201,4 +201,85 @@ $(document).ready(function() {
         },
         'placement': 'bottom',
     })
+
+    $('.sort-report-title').click(function(e) {
+        e.preventDefault();
+        var id = $(this).attr("data-id");
+        if ($('.report-table[data-id="' + id + '"]').is(":visible")) {
+            $('.report-table[data-id="' + id + '"] .row').sort(function(a, b) {
+                return $(a).find(".col-6").text() > $(b).find(".col-6").text() ? 1 : -1;
+            }).appendTo('.report-table[data-id="' + id + '"]');
+        } else {
+            $('.card-report[data-id="' + id + '"] .card').sort(function(a, b) {
+                return $(a).find(".card-title").text() > $(b).find(".card-title").text() ? 1 : -1;
+            }).appendTo('.card-report[data-id="' + id + '"]');
+        }
+
+    })
+
+    $('.sort-report-date').click(function(e) {
+        e.preventDefault();
+        var id = $(this).attr("data-id");
+        if ($('.report-table[data-id="' + id + '"]').is(":visible")) {
+            $('.report-table[data-id="' + id + '"] .row').sort(function(a, b) {
+                return $(a).find(".col-3").text() > $(b).find(".col-3").text() ? 1 : -1;
+            }).appendTo('.report-table[data-id="' + id + '"]');
+        } else {
+            $('.card-report[data-id="' + id + '"] .card').sort(function(a, b) {
+                return $(a).find(".card-date").text() > $(b).find(".card-date").text() ? 1 : -1;
+            }).appendTo('.card-report[data-id="' + id + '"]');
+        }
+
+    })
+
+    $('.sort-report-priority').click(function(e) {
+        e.preventDefault();
+        var id = $(this).attr("data-id");
+        if ($('.report-table[data-id="' + id + '"]').is(":visible")) {
+            $('.report-table[data-id="' + id + '"] .row').sort(function(a, b) {
+                return $(a).find(".priority").text() > $(b).find(".priority").text() ? 1 : -1;
+            }).appendTo('.report-table[data-id="' + id + '"]');
+        } else {
+            $('.card-report[data-id="' + id + '"] .card').sort(function(a, b) {
+                return $(a).find(".priority").text() > $(b).find(".priority").text() ? 1 : -1;
+            }).appendTo('.card-report[data-id="' + id + '"]');
+        }
+    })
+
+
+    $('.sort-report-progress').click(function(e) {
+        e.preventDefault();
+        var id = $(this).attr("data-id");
+        if ($('.report-table[data-id="' + id + '"]').is(":visible")) {
+            $('.report-table[data-id="' + id + '"] .row').sort(function(a, b) {
+                return parseInt($(a).find(".report-progress").attr("data-progress")) - parseInt($(b).find(".report-progress").attr("data-progress"));
+            }).appendTo('.report-table[data-id="' + id + '"]');
+        } else {
+            $('.card-report[data-id="' + id + '"] .card').sort(function(a, b) {
+                return parseInt($(a).find(".report-progress").attr("data-progress")) - parseInt($(b).find(".report-progress").attr("data-progress"));
+            }).appendTo('.card-report[data-id="' + id + '"]');
+        }
+    })
+
+    $('.search-activity-title').keyup(function(e) {
+        var id = $(this).attr("data-id");
+        var filter = $(this).val().toLowerCase(); // get the value of the input, which we filter on
+        if ($('.report-table[data-id="' + id + '"]').is(":visible")) {
+            $('.row').removeClass('d-none');
+            $('.report-table[data-id="' + id + '"] .row').filter(function() {
+                var result = $(this).find('.col-6').text().toLowerCase().indexOf(filter);
+                $(this).toggle(result > -1);
+            });
+        } else {
+            $('.card').removeClass('d-none');
+            $('.card-report[data-id="' + id + '"] .card').filter(function() {
+                $(this).toggle($(this).find('.card-body h5').text().toLowerCase().indexOf(filter) > -1);
+            });
+            // $('.card-report').find('.card .card-body h5:not(:contains("' + filter + '"))').parent().parent().addClass('d-none');
+            e.preventDefault();
+
+        }
+    })
+
+
 });

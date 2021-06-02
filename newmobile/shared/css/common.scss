@@ -1,0 +1,55 @@
+// function
+@function url-encode($string) {
+    $map: (
+      "%": "%25",
+      "<": "%3C",
+      ">": "%3E",
+      " ": "%20",
+      "!": "%21",
+      "*": "%2A",
+      "'": "%27",
+      '"': "%22",
+      "(": "%28",
+      ")": "%29",
+      ";": "%3B",
+      ":": "%3A",
+      "@": "%40",
+      "&": "%26",
+      "=": "%3D",
+      "+": "%2B",
+      "$": "%24",
+      ",": "%2C",
+      "/": "%2F",
+      "?": "%3F",
+      "#": "%23",
+      "[": "%5B",
+      "]": "%5D"
+    );
+    $new: $string;
+    @each $search, $replace in $map {
+      $new: str-replace($new, $search, $replace);
+    }
+    @return $new;
+  }
+  @function bg-svg($string) {
+    @return url('data:image/svg+xml;charset=utf8,#{url-encode($string)}');
+  }
+  // variable
+  $amber: #FFC107;
+  $gray-400: #BDBDBD;
+  // style
+  .progress.fivestar {
+    background-image: bg-svg('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"><polygon fill="' + $gray-400 + '" points="7.33 4.68 11.5 4.68 11.5 4.73 8.13 7.28 9.45 11.49 9.42 11.5 6 8.91 2.58 11.5 2.55 11.49 3.87 7.28 0.5 4.73 0.5 4.68 4.67 4.68 5.98 0.5 6.02 0.5 7.33 4.68"/></svg>');
+    height: 1.2rem;
+    width: 6rem;
+    .progress-bar.progress-bar-star {
+      background-image: bg-svg('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"><polygon fill="' + $amber + '" points="7.33 4.68 11.5 4.68 11.5 4.73 8.13 7.28 9.45 11.49 9.42 11.5 6 8.91 2.58 11.5 2.55 11.49 3.87 7.28 0.5 4.73 0.5 4.68 4.67 4.68 5.98 0.5 6.02 0.5 7.33 4.68"/></svg>');
+    }
+  }
+  .progress.fivestar,
+  .progress-bar.progress-bar-star {
+    background-color: transparent;
+    background-size: 1.2rem;
+    background-repeat: repeat-x;
+    border-radius: 0;
+  }

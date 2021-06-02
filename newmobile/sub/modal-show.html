@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<title>CHEC</title>
+<meta name="keywords" content="CHEC,feedback">
+<meta name="description" content="test">
+<meta property="og:title" content="CHEC test">
+<meta property="og:type" content="article">
+<meta property="og:description" content="test">
+<meta property="og:url" content="https://www.test.com/">
+<meta property="og:site_name" content="CHEC test">
+<meta property="og:image" content="/shared/img/">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="/shared/css/bootstrap.min.css" media="all" charset="utf-8">
+<link rel="stylesheet" href="/shared/css/common.css" media="all" charset="utf-8">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/shared/js/slick.min.js"></script>
+<script>
+    jQuery(document).ready(function(){
+        jQuery('.modal').modal('show');
+    });
+</script>
+</head>
+<body>
+<article class="wrapper">
+    <form>
+    <div class="modal fade" id="examplemyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">REFLECTION</h5>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <p class="text-muted">This pop up will show up when you press add refrection or when you access the blog on <span class="text-dark font-weight-bold" style="margin-bottom: 30px;">Monday.</span></p>
+                <p class="text-dark">Do you feel the activities you did last week contributed to your goals?</p>
+                <p class="text-dark d-inline" style="margin-bottom: 30px;">Not contributed at all <span class="d-inline">
+                    <div class="rating">
+                    <input class="rating__input hidden--visually" type="radio" id="5-star" name="rating" value="5" required="">
+                    <label class="rating__label" for="5-star" title="5 out of 5 rating">
+                      <span class="rating__icon"></span>
+                      <span class="hidden--visually">5 out of 5 rating</span>
+                    </label>
+                
+                    <input class="rating__input hidden--visually" type="radio" id="4-star" name="rating" value="4">
+                    <label class="rating__label" for="4-star" title="4 out of 5 rating">
+                      <span class="rating__icon"></span>
+                      <span class="hidden--visually">4 out of 5 rating</span>
+                    </label>
+                
+                    <input class="rating__input hidden--visually" type="radio" id="3-star" name="rating" value="3">
+                    <label class="rating__label" for="3-star" title="3 out of 5 rating">
+                      <span class="rating__icon"></span>
+                      <span class="hidden--visually">3 out of 5 rating</span>
+                    </label>
+                
+                    <input class="rating__input hidden--visually" type="radio" id="2-star" name="rating" value="2">
+                    <label class="rating__label" for="2-star" title="2 out of 5 rating">
+                      <span class="rating__icon"></span>
+                      <span class="hidden--visually">2 out of 5 rating</span>
+                    </label>
+                
+                    <input class="rating__input hidden--visually" type="radio" id="1-star" name="rating" value="1">
+                    <label class="rating__label" for="1-star" title="1 out of 5 rating">
+                      <span class="rating__icon"></span>
+                      <span class="hidden--visually">1 out of 5 rating</span>
+                    </label>
+                  </div></span>Extremely Contributed</p>
+                <div class="form-group">
+                    <label for="textarea1">Why or why not?</label>
+                    <textarea class="form-control" id="textarea1" rows="3">Write the reason...</textarea>
+                </div>
+            <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+      <button type="submit" class="btn btn-primary">submit</button>
+      </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </form>
+</article>
+</body>
+</html>
